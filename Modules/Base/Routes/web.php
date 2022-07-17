@@ -38,5 +38,5 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::post('upload', [UploadController::class, 'index'])->name('upload');
     Route::post('upload/remove', [UploadController::class, 'remove'])->name('upload.remove');
     Route::get('/admin', [DashboardController::class, 'index'])->name('dashboard');
-    Route::post('logout', [DashboardController::class, 'logout'])->name('logout');
+//    Route::post('logout', [DashboardController::class, 'logout'])->name('admin.logout');
 });
